@@ -4,9 +4,9 @@ test('date picker', async ({ page }) => {
 
     await page.goto('https://testautomationpractice.blogspot.com/');
 
-    const year = '2024';
+    const year = '2026';
     const month = 'December';
-    const date = '28';
+    const date = '20';
 
     // Open calendar popup
     await page.click('#datepicker');
