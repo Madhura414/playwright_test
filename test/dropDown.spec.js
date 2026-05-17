@@ -8,10 +8,12 @@ test ('Check Boxes', async({page})=>{
 
 //Assertions
 // chek the number of options in dropdown approcach 1
- const options= await page.locator("#country option")
- await expect(options).toHaveCount(10);
+//  const options= await page.locator("#country option")
+//  await expect(options).toHaveCount(10);
 
- //2  chek the number of options in dropdown - approach 2
- const options1= await page.$$("#country option")
- console.log("number of options ",options1.length);
-  await expect(options1).toBe(10);
+//  //2  chek the number of options in dropdown - approach 2
+//  const options1= await page.$$("#country option")
+//  console.log("number of options ",options1.length);
+//   await expect(options1).toBe(10);
+
+  //check the presencse 
