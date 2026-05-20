@@ -20,8 +20,8 @@ test('date picker', async ({ page }) => {
         const currentYear =
             await page.locator('.ui-datepicker-year').textContent();
 
-        console.log("Current Month:", currentMonth);
-        console.log("Current Year:", currentYear);
+        // console.log("Current Month:", currentMonth);
+        // console.log("Current Year:", currentYear);
 
         // Stop when expected month and year match
         if (currentMonth === month && currentYear === year) {
