@@ -10,9 +10,7 @@ const  optionsPage= await page.$$("li[class='C120_suggest_box'] div[class='C120_
 for (const  option of optionPage)
 {
     const optionText = await option.textContent();
-
-
-s
+    
 if(value.includes("Bangalore"))
 {
     await optionsPage.click()
