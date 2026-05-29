@@ -42,3 +42,8 @@ test("assertion demo", async ({ page }) => {
   const options = await page.locator("select [name='DateOfBirthMonth'] option");
   await expect(options).toHaveCount(12);
 });
+
+
+// // to have class Element has 
+// const element = await page.locator(".header-logo");
+// await expect(element).toHaveText("logo");
