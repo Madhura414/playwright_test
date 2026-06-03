@@ -1,4 +1,9 @@
 import { test, expect } from "@playwright/test";
+// hooks are performed before and after the test cases execution
+// beforeAll -> it will execute once before all the test cases
+// afterAll -> it will execute once after all the test cases
+// beforeEach -> it will execute before each test case
+// afterEach -> it will execute after each test case
 
 let page;
 

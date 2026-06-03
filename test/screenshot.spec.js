@@ -25,3 +25,4 @@ test.only("Element  screenshot", async ({ page }) => {
     .screenshot({ path: "test/screenshots/" + Date.now() + "macbook.png" });
 });
 //*[@id='content']/div[2]/div[1]
+

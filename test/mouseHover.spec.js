@@ -1,4 +1,6 @@
+// mouse hover actiobn : its is used to hover the mouse on the element and perform somea ctionon that element
 const  { test , expect } = require ('@playwright/test');
+
 test ('Mouse Hover', async ({page})=>{
     test.setTimeout(120000);
      await page.goto("https://demo.opencart.com/");

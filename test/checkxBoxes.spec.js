@@ -1,3 +1,6 @@
+// check boxes :
+ 
+
 const { test, expect } = require("@playwright/test");
 test("Check Boxes", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
@@ -11,7 +14,7 @@ test("Check Boxes", async ({ page }) => {
   ).toBeChecked();
   //await expect(await page.locator("//input[@id='sunday' and @type='checkbox']")).isChecked().toBeTruthy();
   await page.waitForTimeout(5000);
-  // multipe check boxes
+  // multipe check boxes  
   const checkBoxesLocators = [
     "//input[@id='sunday' and @type='checkbox']",
     "//input[@id='monday' and @type='checkbox']",
