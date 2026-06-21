@@ -1,3 +1,4 @@
+// frames :  frames are used to divide a web page into multiple sections, each section can load a separate HTML document. 
 const { test, expect } = require("@playwright/test");
 
 test("handle frames", async ({ page }) => {

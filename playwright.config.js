@@ -15,7 +15,8 @@ import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   testDir: "./test",
   /* Run tests in files in parallel */
-  fullyParallel: false,
+  fullyParallel: false,  //it will run the test cases in sequential manner
+  //true -> it will run the test cases in parallel manner
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -23,6 +24,7 @@ export default defineConfig({
   retries:1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : undefined,
+ // workers: 4 ,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter:   [["html"],
   //[["list"],
