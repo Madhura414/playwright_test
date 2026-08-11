@@ -18,6 +18,7 @@ test ("built- inLOcators",async ({page})=>{
     await page.getByPlaceholder('Password').fill("admin123");
 
     await page.getByRole('button',{type: 'submit'}).click();
+    await page.getByRole('button',{type:  'Submit'}).click();
 
     await expect(page.getByRole('Mary Johnson')).toBeVisible();
     await page.getByRole ('button',{name:'Admin'}).click();

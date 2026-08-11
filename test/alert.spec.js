@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import  {test, expect}  from '@playwright/test';
 
 test("Simple Alert handling", async ({ page }) => {
 
@@ -25,6 +25,7 @@ test("Confirmation Alert - OK button", async ({ page }) => {
         await dialog.accept(); // Click OK
     });
 
+    
     await page.click("//button[normalize-space()='Confirmation Alert']");
     await expect(page.locator("#demo")).toHaveText("You pressed OK!");
 });
